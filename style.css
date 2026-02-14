@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:darkslategrey;
+    text-align: center;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 1200px;
+    text-align: left;
+}
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 2rem;
+}
+.navigation a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navigation a:hover{
+    color: seagreen;
+}
+hr{
+    opacity: 20%;
+}header-logo{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+.herosub{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.name{
+    font-size: 2.3rem;
+    color: whitesmoke;
+}
+.title{
+    font-size: 1.5rem;
+    color: darkgray;
+}
+.herobtns{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+}
+.aboutme{
+    background-color: cadetblue;
+    color: whitesmoke;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+}
+.herobtns a:hover{
+    color: seagreen;
+}
+.hireMe{
+     background-color: rgba(57, 62,70, 0.75);
+    color: whitesmoke;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    gap: 0.5rem;
+}
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+.textcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.textTitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    text-align: left;
+}
+.aboutName{
+    color: whitesmoke;
+}
+.aboutTitle{
+    color: cadetblue;
+}
+.aboutMebar{
+    text-align: justify;
+    color: rgba(237, 242, 250, 0.75);
+    
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+.about-content p{
+    max-width: 400px;
+    text-align: left;
+    line-height: 1.1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills{
+    padding: 80px 30px;
+    margin: 5rem 0rem;
+    margin-bottom: 0;
+}
+.skillscontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+.aboutskills,.aboutskills2,.aboutskills3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.skills-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 22px;
+    color: whitesmoke;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+}
+.progress{
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.progress-bar{
+    height: 8px;
+    border-radius: 10px;
+    background: teal;
+    width: 0;
+    animation: fill 1.5s ease-in-out forwards;
+    display: block;
+
+}
+.html
+{--skill-width: 80%;}
+.css{
+    --skill-width: 70%;}
+.c
+{   --skill-width: 50%; }
+@keyframes fill{
+    from{width: 0;}
+    to{width: var(--skill-width);}
+}
+.skills:hover .progress-bar{
+    background: #00ffff;
+    transform: scaleY(1.3);
+    transform-origin: bottom;
+    box-shadow:0 0 8px #00ffff;
+}
+.contactcontainer{
+    padding: 60px 20px;
+    background: #333;
+    color: white;
+    padding-top: 60px;
+}
+.contactTitle{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.contactcontainer .contact-form input:focus
+.contactcontainer .contact-form textarea:focus{
+    outline: 2px solid teal;
+}
+.contactcontainer .contact-form button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: teal;
+    color: white;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+.contactcontainer .contact-form button:hover{
+    background: #00ffff;
+} 
+@media(max-width:768px){
+.contactTitle h1{
+   font-size: 30px;
+}
+}.contactcontainer .contact-form input,.contactcontainer .contact-form textarea,.contactcontainer contact-form button{
+    font-size: 15px;
+}
+footer{
+    color: whitesmoke;
+    padding: 2rem;
+    text-align: center;
+    font-size: 5px;
+}
+@media (max-width:1023px){
+    header{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .name,.title{
+        font-size: 2rem;
+    }
+    .aboutMe{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+
+    }
+    .textcontainer{
+        align-items: center;
+        margin: 0rem 5rem;
+        gap: 1rem;
+    }
+    .aboutName,.aboutTitle{
+        font-size: 2rem;
+    }
+    .skills{
+        padding: 30px;
+    }
+    
+    
+}
